@@ -13,7 +13,7 @@ services:
     environment:
       - DRONE_OPEN=true
       - DRONE_SERVER_PROTO=https
-      - DRONE_SERVER_HOST=***
+      - DRONE_SERVER_HOST=192.168.166.89
       - DRONE_GITHUB=true
       - DRONE_GITHUB_SERVER=https://github.com
       - DRONE_GITHUB_CLIENT_ID=***
