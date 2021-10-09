@@ -54,7 +54,7 @@ services:
     - GITLAB_TIMEZONE=Kolkata
 
     - GITLAB_HTTPS=false
-    - SSL_SELF_SIGNED=true
+    - SSL_SELF_SIGNED=false
 
     - GITLAB_HOST=localhost
     - GITLAB_PORT=10080
@@ -78,7 +78,7 @@ services:
     - GITLAB_BACKUP_TIME=01:00
 
     - SMTP_ENABLED=false
-    - SMTP_DOMAIN=www.example.com
+    - SMTP_DOMAIN=
     - SMTP_HOST=smtp.gmail.com
     - SMTP_PORT=587
     - SMTP_USER=mailer@example.com
