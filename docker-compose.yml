@@ -9,10 +9,10 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     links:
       - drone-tree-config
-    restart: always
+    restart: alwayss
     environment:
       - DRONE_OPEN=true
-      - DRONE_SERVER_PROTO=http
+      - DRONE_SERVER_PROTO=https
       - DRONE_SERVER_HOST=192.168.166.89:8000
       - DRONE_GITLAB=true
       - DRONE_GITLAB_SERVER=http://192.168.166.89:5080/
