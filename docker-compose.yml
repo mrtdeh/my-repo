@@ -14,10 +14,10 @@ services:
       - DRONE_OPEN=true
       - DRONE_SERVER_PROTO=https
       - DRONE_SERVER_HOST=192.168.166.89
-      - DRONE_GITHUB=true
-      - DRONE_GITHUB_SERVER=https://github.com
-      - DRONE_GITHUB_CLIENT_ID=***
-      - DRONE_GITHUB_CLIENT_SECRET=***
+      - DRONE_GITLAB=true
+      - DRONE_GITLAB_SERVER=http://192.168.166.89:5080
+      - DRONE_GITLAB_CLIENT_ID=***
+      - DRONE_GITLAB_CLIENT_SECRET=***
       - DRONE_GIT_ALWAYS_AUTH=true
       - DRONE_SECRET=***
       - DRONE_RUNNER_CAPACITY=2
@@ -32,5 +32,5 @@ services:
       - PLUGIN_CONCAT=true
       - PLUGIN_FALLBACK=true
       - PLUGIN_SECRET=<SECRET>
-      - GITHUB_TOKEN=<GITHUB_TOKEN>
+      - GITLAB_TOKEN=7xHbQnvzZRkqcUssQGbz
     restart: always
