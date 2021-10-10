@@ -9,7 +9,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     links:
       - drone-tree-config
-    restart: alwayss
+    restart: always
     environment:
       - DRONE_OPEN=true
       - DRONE_SERVER_PROTO=https
