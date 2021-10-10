@@ -22,6 +22,7 @@ services:
       - DRONE_SECRET=ea81f4b1d0856d4cdf8fd6440945b50c
       - DRONE_RUNNER_CAPACITY=2
       - DRONE_USER_CREATE=username:mrtdeh,admin:true
+      - DRONE_USER_FILTER=mrtdeh
       - DRONE_YAML_ENDPOINT=http://drone-tree-config:3000
       - DRONE_YAML_SECRET=08e19d9cbac38a2a51df88fd569f7647
       
