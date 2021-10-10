@@ -15,22 +15,22 @@ services:
       - DRONE_SERVER_PROTO=http
       - DRONE_SERVER_HOST=192.168.166.89:8000
       - DRONE_GITLAB=true
-      - DRONE_GITLAB_SERVER=http://192.168.166.89:5080/
-      - DRONE_GITLAB_CLIENT_ID=a1d0cd7ef825ebd3cff104c6b9bf5c1b2bfb5ae49f45a34f2f2e01a1b5de1092
-      - DRONE_GITLAB_CLIENT_SECRET=25263abff3677a0b0444c3c5fc6918045181a9dad98a9d87cf1424e431f8d056
+      - DRONE_GITLAB_SERVER=http://gitlab.apk-group.ir/
+      - DRONE_GITLAB_CLIENT_ID=fed4a866fd0fe39b77499ef06441b5b4aaabcc62bae04ae0aa973eceb7175bfa
+      - DRONE_GITLAB_CLIENT_SECRET=8ed311177d563e7a9c308c26a95fc9e70938ce005396e454d0a658e0b1cc1326
       - DRONE_GIT_ALWAYS_AUTH=true
       - DRONE_SECRET=ea81f4b1d0856d4cdf8fd6440945b50c
       - DRONE_RUNNER_CAPACITY=2
       - DRONE_USER_CREATE=username:mrtdeh,admin:true
       - DRONE_YAML_ENDPOINT=http://drone-tree-config:3000
-      - DRONE_YAML_SECRET=<08e19d9cbac38a2a51df88fd569f7647
-
+      - DRONE_YAML_SECRET=08e19d9cbac38a2a51df88fd569f7647
+      
   drone-tree-config:
     image: bitsbeats/drone-tree-config
     environment:
       - PLUGIN_DEBUG=true
       - PLUGIN_CONCAT=true
       - PLUGIN_FALLBACK=true
-      - PLUGIN_SECRET=<08e19d9cbac38a2a51df88fd569f7647
-      - GITLAB_TOKEN=wTpMwDv6t4AyR2VobFzJ
+      - PLUGIN_SECRET=08e19d9cbac38a2a51df88fd569f7647
+      - GITLAB_TOKEN=WrGV41-Hxs6CGGYMkA9a
     restart: always
