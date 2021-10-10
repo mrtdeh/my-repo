@@ -32,5 +32,5 @@ services:
       - PLUGIN_CONCAT=true
       - PLUGIN_FALLBACK=true
       - PLUGIN_SECRET=<08e19d9cbac38a2a51df88fd569f7647
-      - GITLAB_TOKEN=7xHbQnvzZRkqcUssQGbz
+      - GITLAB_TOKEN=wTpMwDv6t4AyR2VobFzJ
     restart: always
